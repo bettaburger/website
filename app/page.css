@@ -1,7 +1,36 @@
 body {
-  background-color:rgb(245, 246, 247);
-  font-family: 'Noto Sans';
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
+.page {
+  min-height: 100vh;
+  background-color: rgb(245, 246, 247); /* Unified background */
+  display: flex;
+  flex-direction: column; /* Stack header and main content */
+}
 
+/* header*/
+.header {        
+  width: 100%;                /* Full width */
+  padding: 4rem 0;            /* Space above and below text */
+  background-color: inherit;
+  text-align: center;          /* Center the text horizontally */
+}
+/*header name*/
+.header h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
 
+.header h2 {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(76, 76, 76);
+}
+
+.main {
+  flex: 1;
+  padding: 10px;
+}
