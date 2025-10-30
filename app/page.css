@@ -30,7 +30,7 @@ body {
   color: rgb(76, 76, 76);
 }
 
-.main {
+.main{
   flex: 1;
   padding: 10px;
 }

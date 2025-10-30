@@ -1,4 +1,5 @@
 import './page.css'
+import './styles/card.css'
 
 export default function Home() {
   return (
@@ -8,10 +9,13 @@ export default function Home() {
         <h2>Student at University of Massachusetts Boston</h2>
       </header>
 
-      <main className="main">
-        {/* Your main content goes here */}
-        <p>Welcome to my page!</p>
-      </main>
+      <container className="container">
+        <card-container className="card-container">
+          <card className="card">
+             <p>hello</p>
+          </card>
+        </card-container>
+      </container>
     </div>
   );
 }
