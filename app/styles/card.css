@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center; 
     align-items: center;    
-    width: 600px;
+    width: 800px;
     height: 400px;          
     background: inherit;     
     border-radius: 12px;
@@ -19,15 +19,23 @@
 
 .card {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    height: 300px;
+    justify-content: left;
+    text-indent: 20px;
+    align-items: left;
+    width: 700px;
+    height: 200px;
     background: inherit;
     border-radius: 10px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-    margin: 16px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
+
+.card title {
+    font-style: inherit;
+    font-weight: 400px;
+}
+
+/*buttons*/
+
 
 
 
