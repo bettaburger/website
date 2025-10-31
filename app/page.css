@@ -5,8 +5,6 @@ body {
   cursor: url('./images/rest2-cat.svg'), auto;
 }
 
-
-
 .page {
   min-height: 100vh;
   background-color: rgb(245, 246, 247); 
