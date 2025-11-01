@@ -12,5 +12,33 @@ body {
   flex-direction: column;
 }
 
+/*header fonts*/
+.page h1 {
+    font-size: 25px;
+    font-weight: 350;
+
+}
+/*smaller font*/
+.page h2 {
+    margin-top: -5px; 
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(76, 76, 76);
+}
+
+.section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-indent: 20px;
+    width: 750px;
+    height: 200px;
+    background: inherit;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    
+    margin: 30px auto; 
+}
+
 
 
