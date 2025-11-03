@@ -52,7 +52,7 @@ body {
   margin: 0;
   text-align: left;
 
-  list-style-type: circle;
+  list-style-type: disc;
 }
 
 /* inside the section */
@@ -85,3 +85,38 @@ body {
     font-size: 0.9rem;
   }
 }
+
+/* buttons */
+.button {
+  padding: 10px 16px;
+  border-radius: 50px;
+  color: rgb(76, 76, 76);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  user-select: none;
+  gap: 6px; /*icon gap*/
+
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(183, 183, 183, 0.25) 0px 1px 0px inset;
+
+}
+
+/* Button hover */
+.button:hover {
+  cursor: url('./images/hover-cat.svg'), auto;
+  background-color: rgb(244, 244, 244);
+  color: rgb(141, 141, 141);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.inner-section a {
+  text-decoration: none;
+  cursor: url('./images/hover-cat.svg'), auto; 
+}
+
+
+/*
+https://scrollrevealjs.org/guide/hello-world.html
+library for a better scroll effect
+*/
