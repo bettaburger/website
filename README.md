@@ -1,4 +1,7 @@
-# Folder Structure
+# Personal Website
+Created with Next.JS and deployed on Vercel
+
+## Folder Structure
 ```
 website
 ├── app
