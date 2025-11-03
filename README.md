@@ -1,5 +1,6 @@
 # Folder Structure
-.
+```
+website
 ├── app
 │   ├── components
 │   │   ├── header.js
@@ -21,5 +22,5 @@
 └── public
     ├── koi-fish.png
     ├── Resume_stephanie.pdf
-    └── Resume2025.pdf
+    └── Resume2025.pdf```
 
