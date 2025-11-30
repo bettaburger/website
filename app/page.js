@@ -46,6 +46,19 @@ export default function Home() {
         <div id="projects" className="section">
           <h1>Projects</h1>
             {/**https://wumbo.net/symbols/up-right-arrow/ */}
+
+            <div className="inner-section"> grp
+              <Link href="https://github.com/bettaburger/grp" target="_blank">
+                <h2>Small collection of shell cmds written with Go | Go, Bash, Shell  ↗</h2>
+              </Link>
+            </div>
+
+            <div className="inner-section"> enc
+              <Link href="https://github.com/bettaburger/enc" target="_blank">
+                <h2>Tool for http lookups | Go, Curl, JSON  ↗</h2>
+              </Link>
+            </div>
+
             <div className="inner-section"> Birthday-Tracker
               <Link href="https://bettaburger.github.io/birthday-list/" target="_blank">
                 <h2>Track birthday dates | React, Node.JS, CSS  ↗</h2>
