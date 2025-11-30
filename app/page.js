@@ -85,10 +85,7 @@ export default function Home() {
           <h2>I'm a third year student studying at Computer Science at University of Massachusetts Boston.
             My current interests at the moment is operating systems, and scaling with virtualization. I typed my first
             System.out.println("Hello, World!"); when I took an AP Java course in my senior year of highschool and I became interested in coding and
-            computers ever since. However, there were lots of set-backs and self-doubt, but I know that with persistence and
-            dedication, I can become the best version of my past self.  
-            Outside of coding, I'm a rock and avid metal lover, my favorite bands are Alice in Chains, Staind, Helmet, Hum and more.
-            The goal in life is to serve humanity to the fullest! 
+            computers ever since. Outside of coding, I'm a rock and avid metal lover, my favorite bands are Alice in Chains, Staind, Helmet, Hum and more.
           </h2>
         </div>
         {/* about me*/}
@@ -114,7 +111,7 @@ export default function Home() {
         </div>
 
 
-      <a href="https://www.flaticon.com/free-icons/pet" title="pet icons">Cat cursor by Sergei Kokota - Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/pet" title="pet icons">Credits to Sergei Kokota for the cat cursor.</a>
     </div>
   )
 }
