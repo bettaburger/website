@@ -15,8 +15,15 @@ export default function Home() {
       <Nav />
         <div id="experience" className="section">
           <h1>Experience</h1>
-          <div className="inner-section">Sales Associate
-            <h2>July 2025 - Present</h2>
+          <div className="inner-section">Target | Starbucks Barista
+            <h2>March 2026 - Present</h2>
+            <ul>
+              <li>...</li>
+            </ul>
+          </div>
+
+          <div className="inner-section">Dunkin | Sales Associate
+            <h2>July 2025 - November 2025</h2>
             <ul>
               <li>Operate POS and handle transactions</li>
               <li>Maintain store cleanliness and organization</li>
@@ -98,7 +105,7 @@ export default function Home() {
           <h2>I'm a third year student studying at Computer Science at University of Massachusetts Boston.
             My current interests at the moment is operating systems, and scaling with virtualization. I typed my first
             System.out.println("Hello, World!"); when I took an AP Java course in my senior year of highschool and I became interested in coding and
-            computers ever since. Outside of coding, I'm a rock and avid metal lover, my favorite bands are Alice in Chains, Staind, Helmet, Hum and more.
+            computers ever since. Outside of coding, I like to listen to rock and metal, my favorite bands are Alice in Chains, Staind, Helmet, Hum and more.
           </h2>
         </div>
         {/* about me*/}
@@ -107,18 +114,19 @@ export default function Home() {
           <h1>Books</h1>
           <div className="inner-section">In-progress
             <ul>
-                <li>Modern Operating Systems 5th Edition | Andrew S. Tanenbaum Herbert Bos</li>
-                <li>Computer Organization & Design The Hardware / Software | Morgan Kaufmann</li>
-                <li>How Linux Works 2nd Edition | Brian Ward</li>
+                <li>Networking: A Top Down Approach | Jim Kurose</li>
               </ul>
           </div>
 
-          <div className="inner-section">Read or Skimmed
+          <div className="inner-section">Some Books I enjoyed reading. 
             <ul>
                 <li>Algorithms 4th Edition | Kevin Wayne Robert Sedgewick</li>
                 <li>The Go Programming Language | Donovan Kernighan</li>
                 <li>The C Programming Language | Brian Kernighan Dennis Ritchie</li>
                 <li>Introduction to Programming in Python | Robert S. Kevin Wayne Robert D.</li>
+                <li>Modern Operating Systems 5th Edition | Andrew S. Tanenbaum Herbert Bos</li>
+                <li>Computer Organization & Design The Hardware / Software | Morgan Kaufmann</li>
+                <li>How Linux Works 2nd Edition | Brian Ward</li>
               </ul>
           </div>
         </div>
