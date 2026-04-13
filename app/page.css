@@ -70,7 +70,6 @@ body {
   border-radius: 10px;
 }
 
-/* iPhone display */
 @media (max-width: 480px) {
   .section {
     width: 88%;

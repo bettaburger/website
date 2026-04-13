@@ -54,39 +54,26 @@ export default function Home() {
           <h1>Projects</h1>
             {/**https://wumbo.net/symbols/up-right-arrow/ */}
 
-            <div className="inner-section"> grp
-              <Link href="https://github.com/bettaburger/grp" target="_blank">
-                <h2>Small collection of shell cmds written with Go | Go, Bash, Shell  ↗</h2>
+            <div className="inner-section"> pobby
+              <Link href="https://github.com/bettaburger/pobby" target="_blank">
+                <h2>A CLI tool for managing listening ports | Go, CLI, Cobra, Bubbletea ↗</h2>
+                <ul>
+                  <li>Displays listening ports in the terminal with the option to search and kill ports</li>
+                  <li>Project uses Cobra's CLI library and Bubbletea's TUI library</li>
+                </ul>
               </Link>
             </div>
 
             <div className="inner-section"> enc
               <Link href="https://github.com/bettaburger/enc" target="_blank">
-                <h2>Tool for http lookups | Go, Curl, JSON  ↗</h2>
+                <h2>A program that displays http/https responses in JSON format | Go, Curl, JSON</h2>
               </Link>
             </div>
 
-            <div className="inner-section"> Birthday-Tracker
-              <Link href="https://bettaburger.github.io/birthday-list/" target="_blank">
-                <h2>Track birthday dates | React, Node.JS, CSS  ↗</h2>
+            <div className="inner-section"> grp
+              <Link href="https://github.com/bettaburger/grp" target="_blank">
+                <h2>Small collection of shell cmds written with Go | Go, Bash, Shell</h2>
               </Link>
-            </div>
-
-            <div className="inner-section"> MBTA Alerts
-              <Link href="https://github.com/bettaburger/my-mbta" target="_blank">
-                <h2>Display MBTA API alerts | React, Go, Gorilla/mux  ↗</h2>
-              </Link>
-            </div>
-
-            <div className="inner-section"> Braille-Learner
-              <Link href="https://github.com/bettaburger/braille-learner/tree/main" target="_blank">
-                <h2>Educational tool for learning introductory Braille | Arduino, C++  ↗</h2>
-              </Link>
-                <ul>
-                  <li>Converts the English Alphabet to Braille (Grade 1) using linear solenoids</li>
-                  <li>Powered with an Elegoo UNO R3 and an adapter</li>
-                  <li>Cost friendly for those who want to learn Braille</li>
-                </ul>
             </div>
 
         </div>
@@ -103,9 +90,8 @@ export default function Home() {
         <div id="me" className="section">
           <h1>About Me</h1>
           <h2>I'm a third year student studying at Computer Science at University of Massachusetts Boston.
-            My current interests at the moment is operating systems, and scaling with virtualization. I typed my first
-            System.out.println("Hello, World!"); when I took an AP Java course in my senior year of highschool and I became interested in coding and
-            computers ever since. Outside of coding, I like to listen to rock and metal, my favorite bands are Alice in Chains, Staind, Helmet, Hum and more.
+            My current interests at the moment are Linux operating systems and networks.
+            Outside of coding, I like to listen to music, my favorite bands are Alice in Chains, Staind, Helmet, Hum and more.
           </h2>
         </div>
         {/* about me*/}
