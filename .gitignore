@@ -40,8 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-eslint.config.mjs
-jsconfig.json 
-next.config.mjs
-package-lock.json
 
