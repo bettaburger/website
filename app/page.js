@@ -57,11 +57,11 @@ export default function Home() {
             <div className="inner-section"> pobby
               <Link href="https://github.com/bettaburger/pobby" target="_blank">
                 <h2>A CLI tool for managing listening ports | Go, CLI, Cobra, Bubbletea ↗</h2>
+              </Link>
                 <ul>
                   <li>Displays listening ports in the terminal with the option to search and kill ports</li>
                   <li>Project uses Cobra's CLI library and Bubbletea's TUI library</li>
                 </ul>
-              </Link>
             </div>
 
             <div className="inner-section"> enc
