@@ -56,7 +56,7 @@ export function Header() {
                     LinkedIn
                 </Link>
 
-                <Link target="_blank" href="/Resume_stephanie.pdf" className="button" 
+                <Link target="_blank" href="/Resume_2026.pdf" className="button" 
                     style={{
                         display: "inline-flex",
                         alignItems: "center",
