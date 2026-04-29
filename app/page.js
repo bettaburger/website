@@ -41,7 +41,6 @@ export default function Home() {
               </div>
 
           <div className="inner-section">Assistant
-            <h2>Summer 2022</h2>
             <ul>
               <li>Organize patient information</li>
               <li>Managed employee's payroll with Excel</li>
@@ -54,9 +53,19 @@ export default function Home() {
           <h1>Projects</h1>
             {/**https://wumbo.net/symbols/up-right-arrow/ */}
 
+            <div className="inner-section"> Chimera Dashboard
+              <Link href="https://github.com/B6ChiP/chimera-dashboard" target="_blank">
+                <h2>Dashboard for UMASS Boston's Chimera cluster, which include CPU/GPU nodes | Prometheus, Grafana</h2>
+              </Link>
+                <ul>
+                  <li>Reworked service endpoints to expose Prometheus metrics</li>
+                  <li>CPU/GPU metrics from Chimera are visualized and displayed using Grafana</li>
+                </ul>
+            </div>
+
             <div className="inner-section"> pobby
               <Link href="https://github.com/bettaburger/pobby" target="_blank">
-                <h2>A CLI tool for managing listening ports | Go, CLI, Cobra, Bubbletea ↗</h2>
+                <h2>A CLI tool for managing listening ports | Go, CLI, Cobra, Bubbletea</h2>
               </Link>
                 <ul>
                   <li>Displays listening ports in the terminal with the option to search and kill ports</li>
