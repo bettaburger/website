@@ -58,6 +58,7 @@ export default function Home() {
                 <h2>Dashboard for UMASS Boston's Chimera cluster, which include CPU/GPU nodes | Prometheus, Grafana</h2>
               </Link>
                 <ul>
+                  <li>Collaboration with students to create a Grafana dashboard for the Chimera Cluster</li>
                   <li>Reworked service endpoints to expose Prometheus metrics</li>
                   <li>CPU/GPU metrics from Chimera are visualized and displayed using Grafana</li>
                 </ul>
