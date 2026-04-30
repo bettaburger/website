@@ -73,10 +73,15 @@ export default function Home() {
                 </ul>
             </div>
 
-            <div className="inner-section"> enc
+            <div className="inner-section"> kurn
               <Link href="https://github.com/bettaburger/enc" target="_blank">
-                <h2>A program that displays http/https responses in JSON format | Go, Curl, JSON</h2>
+                <h2>CLI Packet Analyzer | Go, CLI, Cobra, PCAP </h2>
               </Link>
+                <ul>
+                  <li>Work in progress...</li>
+                  <li>Kurn is a CLI tool for PCAP anaylsis and packet trace extraction for tcp/ip, udp, http/1.1/2, sockets and other network traffic protocols.</li>
+                  <li>Inspired by Wireshark</li>
+                </ul>
             </div>
 
             <div className="inner-section"> grp
