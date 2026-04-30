@@ -74,7 +74,7 @@ export default function Home() {
             </div>
 
             <div className="inner-section"> kurn
-              <Link href="https://github.com/bettaburger/enc" target="_blank">
+              <Link href="https://github.com/bettaburger/kurn" target="_blank">
                 <h2>CLI Packet Analyzer | Go, CLI, Cobra, PCAP </h2>
               </Link>
                 <ul>
