@@ -8,7 +8,7 @@
   font-style: normal;
 }
 
-/*front page animation*/
+/*fade in up animation*/
 @keyframes fadeInUp {
   0% {
     transform: translateY(100%);
@@ -21,6 +21,36 @@
 }
 .fadeInUp-animation {
   animation: 1s fadeInUp;
+}
+
+/*fade in left animation*/
+@keyframes fadeToLeft {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.fadeLeft-animation {
+  animation: 1s fadeToLeft ease forwards;
+}
+
+/*fade in right animation*/
+@keyframes fadeToRight {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.fadeRight-animation {
+  animation: 1s fadeToRight ease forwards;
 }
 
 /*typing text effect animation*/
@@ -42,6 +72,10 @@
   border-right: 3px solid currentColor;
   width: 0;
   line-height: 1.2;
-  animation: 1s typing steps(20) forwards, blink .7s infinite; 
+  animation: 1s typing steps(20) forwards, blink 0.7s infinite; 
+}
+
+html {
+  scroll-behavior: smooth;
 }
 

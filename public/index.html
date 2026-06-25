@@ -6,7 +6,7 @@
 </head>
 <body class="bg-zinc-200 min-h-screen flex flex-col">
   <!--social links-->
-  <div class="underline text-1xl sm:text-1xl md:text-2xl flex flex-row justify-center sm:justify-end md:justify-end gap-4 p-7 mx-3">
+  <div id="section-top" class="underline text-1xl sm:text-1xl md:text-2xl flex flex-row justify-center sm:justify-end md:justify-end gap-4 p-7 mx-3">
     <a href="https://github.com/bettaburger" target="blank" class=" text-blue-500 hover:text-green-500 transition-colors duration-200 ease-in-200">
       <button class="bg-zinc-100 opacity-30 hover:opacity-100 duration-200 ease-in-200 rounded-full pr-3 pl-7">GitHub</button>
     </a>
@@ -19,28 +19,167 @@
     <a href="./resumes/Resume_2026.pdf" target="blank" class="text-blue-500 hover:text-green-500 transition-colors duration-200 ease-in-200">
       <button class="bg-zinc-100 opacity-30 hover:opacity-100 duration-200 ease-in-200 rounded-full pl-3 pr-7">Resume</button></a>
   </div>
-  <!--Head-->
+  <!--Header-->
   <div class="flex flex-col justify-start gap-4">
     <pre class="text-blue-400 text-[7px] sm:text-[8px] md:text-xs overflow-x-auto text-shadow-lg">⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠀⠀⠀⠀⠀⠹⡿⣿⣦⡀⠀⠀⠀⠀⠀𓂃 𓈒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡞⠁⠀⢀⣠⣤⣿⣿⢿⣢⣄⠀⠀⠈⠙⢳⣽⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀𓆝⠀𓆝 𓆟⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀
-⠀⠀⠀⠀⠀⠀⠀𓂃 𓈒𓏸⠀⠀⠀⢛⣇⣰⣿⣿⣻⣿⣿⣿⣯⣿⣷⣄⠀⠀⠰⣿⣿⣿⣿⣷⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀𓆝 𓆟 𓆞 𓆝⠀⠀⠀⠀⠀⠀⠀⠀⠀⡛⣻⣿⣿⣷⡦⣄⠀⠀                
-⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⣸⣿⢿⣿⣿⣿⣿⣿⡿⣻⢿⣿⣿⣿⣷⣦⣤⣽⣿⡿⠛⡛⣻⣿⣿⣷⡦⣄⠀        𓆞 𓆝⠀⠀⠀𓆝 𓆟⠀⠀⠀⠀⠀   ⣷⡦⣄⠀𓂃 𓈒⠀⠙⠶⣶⣤⣄⡀
-⠀⠀⠀⠀⠀⠈⠉⠓⠒⠋⠉⣚⢸⢸⣯⣯⠏⢻⢁⣯⠀⠀⣬⣿⣿⣿⣯⣿⣿⣿⣶⣺⣿⣿⣿⣿⣟⣿⠆⠀⠀⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀              ⠉⠙⠶⣶⣤⣄⠉⠙⠶⣶⣤⣄.
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠀⠀⠀⠀⠀⠹⡿⣿⣦⡀⠀⠀⠀⠀⠀𓂃 𓈒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡞⠁⠀⢀⣠⣤⣿⣿⢿⣢⣄⠀⠀⠈⠙⢳⣽⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀𓆝⠀𓆝 𓆟⠀⠀⠀⠀⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⣠⣤⠀
+⠀⠀⠀⠀⠀⠀⠀𓂃 𓈒𓏸⠀⠀⠀⢛⣇⣰⣿⣿⣻⣿⣿⣿⣯⣿⣷⣄⠀⠀⠰⣿⣿⣿⣿⣷⣦⣄⠀⠀⠀⠀⠀⠀𓆝 𓆟 𓆞 𓆝⠀⠀⠀⠀⠀⠀⡛⣻⣿⣿⣷⡦⣄⠀⣷⣦⣄⠀                
+⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⣸⣿⢿⣿⣿⣿⣿⣿⡿⣻⢿⣿⣿⣿⣷⣦⣤⣽⣿⡿⠛⡛⣻⣿⣿⣷⡦⣄⠀        𓆞 𓆝⠀⠀⠀𓆝 𓆟⠀⠀⠀⠀ ⣷⡦⣄⠀𓂃 𓈒⠀⠙⠶⣶⣤⣄⡀
+⠀⠀⠀⠀⠀⠈⠉⠓⠒⠋⠉⣚⢸⢸⣯⣯⠏⢻⢁⣯⠀⠀⣬⣿⣿⣿⣯⣿⣿⣿⣶⣺⣿⣿⣿⣿⣟⣿⠆⠀⠀⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀          ⠉⠙⠶⣶⣤⣄⠉⠙⠶⣶⣤⣄.
     </pre>
     <div class="fadeInUp-animation w-max">
       <h1 id="typewriter" class=" md:pl-10 sm:pl-6 pl-3 text-2xl sm:text-3xl md:text-4xl text-blue-400 typing-animation"></h1>
     </div>
-      <h1 class="fadeInUp-animation md:pl-10 sm:pl-6 pl-3 text-4xl sm:text-6xl md:text-8xl font-medium text-blue-600">Stephanie Ha.</h1>  
+      <h1 class="fadeInUp-animation md:pl-10 sm:pl-6 pl-3 text-4xl sm:text-6xl md:text-8xl font-medium text-blue-400">Stephanie Ha ^. .^₎Ⳋ</h1>  
   </div>
-
-
-
-  <!--page navigation links make this at the bottom then 
-  <div>
-    <h1 class="fadeInUp-animation md:pl-10 sm:pl-6 pl-3 text-1xl sm:text-2xl md:text-3xl text-blue-500 underline">Projects About Hobbies Timeline</h1>
+  <pre class="text-blue-400 text-[7px] sm:text-[8px] md:text-xs overflow-x-auto text-shadow-lg">⠀
+    ⠉⠙⠶⣶⣤⣄⡀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠀⠀⠀⠹⡿⣿⣦⡀⠀⠀⠀𓂃 𓈒⠀⠀⠀𓆝⠀𓆝 𓆟⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠹⡿⣿⣦⡀ ⠀⠀𓂃 𓈒
+  </pre>
+  <!--about and timeline section row-->
+  <div id="section-aboutTimeline" class="flex flex-row gap-5">
+  <!--about section-->
+  <div class="fadeLeft-animation flex flex-col justify-start md:pl-14 sm:pl-6 pl-3 my-6">
+    <!--about me-->
+    <h2 class="fadeLeft-animation text-2xl sm:text-5xl md:text-6xl font-semibold text-blue-500 mb-4">>_About me</h2>
+    <div class="md:p-6 sm:p-4 p-2 my-3 text-xs sm:text-1xl md:text-2xl text-blue-400 mb-7 rounded-lg border-2 border-dotted shadow-md">
+      𑣲⋆࿔*:･<br>
+      <br>
+      I'm a student studying Computer Science at University of<br>
+      Massachusetts Boston with abooout <span class="px-1 text-2xl sm:text-3xl md:text-4xl">three</span> semesters left to complete!<br>
+      <br>
+      I like reading and learning about Linux operating system and networks. I hope to work in that kind of field in the future<br>
+      <br>
+      Outside of coding, I loooove listening to music, eating, reading books and doom-scrolling Tiktok.<br>
+      I occasionally go on hikes and runs when time permits 三三ᕕ( ᐛ )ᕗ 
+    </div>
+    <!--hiking pics-->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="img/IMG_0338.jpg" class="w-full h-60 object-cover rounded-lg">
+      <img src="img/IMG_3716.jpg" class="w-full h-60 object-cover rounded-lg">
+      <img src="img/IMG_7421.jpg" class="w-full h-60 object-cover rounded-lg">
+    </div>
   </div>
-  -->
+  <!--timeline-->
+  <div class="fadeRight-animation flex flex-col justify-start md:px-10 sm:px-6 px-3 my-6">
+    <h2 class="text-2xl sm:text-5xl md:text-7xl font-semibold text-blue-500 mb-4">Timeline</h2>
+    <ul>
+      <li class="relative flex items-baseline gap-6 pb-7">
+        <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400" viewBox="0 0 16 16">
+            <circle cx="8" cy="8" r="8" />
+          </svg>
+        </div>
+        <div>
+          <p class="text-1xl sm:text-1xl md:text-2xl text-green-600">June 2026</p>
+          <p class="mt-2 text-green-600 text-xs sm:text-[8px] md:text-[18px]">Joined UMB Develops</p>
+        </div>
+      </li>
+      <li class="relative flex items-baseline gap-6 pb-7">
+        <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400" viewBox="0 0 16 16">
+            <circle cx="8" cy="8" r="8" />
+          </svg>
+        </div>
+        <div>
+          <p class="text-1xl sm:text-1xl md:text-2xl text-blue-400">March 2026</p>
+          <p class="mt-2 text-blue-400 text-xs sm:text-[8px] md:text-[18px]">Started working part-time at Target as a Starbucks barista ‧𓍢ִ໋𖠚 ׂ 𓈒 ⋆ ۪ </p>
+        </div>
+      </li>
+      <li class="relative flex items-baseline gap-6 pb-7">
+        <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400" viewBox="0 0 16 16">
+            <circle cx="8" cy="8" r="8" />
+          </svg>
+        </div>
+        <div>
+          <p class="text-1xl sm:text-1xl md:text-2xl text-blue-400">July 2025</p>
+          <p class="mt-2 text-blue-400 text-xs sm:text-[8px] md:text-[18px]">Worked at Dunkin' as a Sales Associate ‧𓍢ִ໋𖠚 ׂ 𓈒 ⋆ ۪ </p>
+        </div>
+      </li>
+      <li class="relative flex items-baseline gap-6 pb-7">
+        <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400" viewBox="0 0 16 16">
+            <circle cx="8" cy="8" r="8" />
+          </svg>
+        </div>
+        <div>
+          <p class="text-1xl sm:text-1xl md:text-2xl text-blue-400">June 2023</p>
+          <p class="mt-2 text-blue-400 text-xs sm:text-[8px] md:text-[18px]">Began Technology Apprenticeship at Digital Ready</p>
+        </div>
+      </li>
+      <li class="relative flex items-baseline gap-6 pb-7">
+        <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400" viewBox="0 0 16 16">
+            <circle cx="8" cy="8" r="8" />
+          </svg>
+        </div>
+        <div>
+          <p class="text-1xl sm:text-1xl md:text-2xl text-blue-400">May 2023</p>
+          <p class="mt-2 text-blue-400 text-xs sm:text-[8px] md:text-[18px]">Graduated Boston Latin Academy</p>
+        </div>
+      </li>
+      <li class="relative flex items-baseline gap-6 pb-7">
+        <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400" viewBox="0 0 16 16">
+            <circle cx="8" cy="8" r="8" />
+          </svg>
+        </div>
+        <div>
+          <p class="text-1xl sm:text-1xl md:text-2xl text-blue-400">June 2022</p>
+          <p class="mt-2 text-blue-400 text-xs sm:text-[8px] md:text-[18px]">Worked at Greater Horizon Healthcare as an assistant</p>
+        </div>
+      </li>
+    </ul>
+  </div> <!-- end of timeline -->
+  </div>
+  <pre class="text-blue-400 text-[7px] sm:text-[8px] md:text-xs overflow-x-auto text-shadow-lg">⠀
+    ⠉⠙⠶⣶⣤⣄⡀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠀⠀⠀⠹⡿⣿⣦⡀⠀⠀⠀𓂃 𓈒⠀⠀⠀𓆝⠀𓆝 𓆟⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠹⡿⣿⣦⡀ ⠀⠀𓂃 𓈒
+  </pre> 
+  <!-- Projects and navigation -->
+   <div class="flex flex-row gap-5">
+    <!--projects-->
+   <div id="section-projects" class="flex flex-col justify-start md:pl-14 sm:pl-6 pl-3 my-6">
+    <h2 class="text-2xl sm:text-5xl md:text-6xl font-semibold text-blue-500 mb-4">
+      <a href="#section-projects">>_Projects</a></h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 mr-3">
+      <div class="flex flex-col p-2 text-1xl sm:text-2xl md:text-3xl rounded-lg border-blue-400 border-2 border-dotted shadow-md">
+        <a class="underline text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="https://github.com/bettaburger/pobby" target="blank">Pobby</a>
+        <h2 class=" text-blue-400 text-xs sm:text-1xl md:text-2xl">A CLI tool that monitors processes, inspired by HTOP</h2>
+        <img src="img/projects/pobby.png" class="pt-5 w-full h-60 object-cover rounded-lg">
+      </div>
+      <div class="flex flex-col">
+      <div class="border-blue-400 p-2 text-1xl sm:text-2xl md:text-3xl rounded-lg border-2 border-dotted shadow-md">
+        <a class="underline text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="https://github.com/B6ChiP/chimera-dashboard" target="blank">Chimera Dashboard</a>
+        <h2 class="text-blue-400 text-xs sm:text-1xl md:text-2xl">Dashboard for UMASS Boston's Chimera cluster</h2>
+      </div>
+      <div class="border-blue-400 p-2 text-1xl sm:text-2xl md:text-3xl rounded-lg border-2 border-dotted shadow-md">
+        <a class="underline text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="https://github.com/bettaburger/website" target="blank">Personal Website</a>
+        <h2 class="text-blue-400 text-xs sm:text-1xl md:text-2xl">Created to learn UI/UX</h2>
+      </div>
+      <div class="border-blue-400 p-2 text-1xl sm:text-2xl md:text-3xl rounded-lg border-2 border-dotted shadow-md">
+        <a class="underline text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="https://github.com/bettaburger/kurn" target="blank">Kurn</a>
+        <h2 class="text-blue-400 text-xs sm:text-1xl md:text-2xl">A PCAP Analyzer, inspired by Wireshark</h2>
+      </div>
+      <div class="border-blue-400 p-2 text-1xl sm:text-2xl md:text-3xl rounded-lg border-2 border-dotted shadow-md">
+        <a class="underline text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="https://github.com/bettaburger/grp" target="blank">grp</a>
+        <h2 class="text-blue-400 text-xs sm:text-1xl md:text-2xl">Mini Bash</h2>
+      </div>
+      </div>
+    </div>
+    </div>
+    <!--navigation section-->
+    <div id="section-nav" class="flex flex-col px-3 my-6 justify-start">
+      <h2 class="px-3 text-2xl sm:text-5xl md:text-6xl font-semibold text-blue-500 mb-4">
+        <a href="#section-nav">Navigation</a></h2>
+      <div class="flex flex-col text-right px-3 mb-7 ">
+      <a class="text-2xl sm:text-5xl md:text-5xl text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="#section-top">Top</a>
+      <a class="text-2xl sm:text-5xl md:text-5xl text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="#section-aboutTimeline">About Timeline</a> 
+      <a class="text-2xl sm:text-5xl md:text-5xl text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="#section-bottom">Bottom</a>
+      </div>
+    </div>
+    </div>
+   </div>
   <!--typing animation script-->
   <script>
     const words = ["Welcome to my website", "Check out my socials"];
