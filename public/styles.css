@@ -199,8 +199,8 @@
   .relative {
     position: relative;
   }
-  .mx-3 {
-    margin-inline: calc(var(--spacing) * 3);
+  .mx-10 {
+    margin-inline: calc(var(--spacing) * 10);
   }
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
@@ -259,14 +259,8 @@
   .justify-start {
     justify-content: flex-start;
   }
-  .gap-1 {
-    gap: var(--spacing);
-  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
-  }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -294,17 +288,8 @@
     --tw-border-style: dotted;
     border-style: dotted;
   }
-  .border-blue-100 {
-    border-color: var(--color-blue-100);
-  }
   .border-blue-400 {
     border-color: var(--color-blue-400);
-  }
-  .border-zinc-100 {
-    border-color: var(--color-zinc-100);
-  }
-  .bg-zinc-100 {
-    background-color: var(--color-zinc-100);
   }
   .bg-zinc-200 {
     background-color: var(--color-zinc-200);
@@ -321,14 +306,14 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
-  .p-7 {
-    padding: calc(var(--spacing) * 7);
-  }
   .px-1 {
     padding-inline: var(--spacing);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
@@ -396,9 +381,6 @@
   .underline {
     text-decoration-line: underline;
   }
-  .opacity-30 {
-    opacity: 30%;
-  }
   .opacity-50 {
     opacity: 50%;
   }
@@ -462,13 +444,6 @@
       }
     }
   }
-  .hover\:border-blue-500 {
-    &:hover {
-      @media (hover: hover) {
-        border-color: var(--color-blue-500);
-      }
-    }
-  }
   .hover\:text-green-500 {
     &:hover {
       @media (hover: hover) {
@@ -476,24 +451,10 @@
       }
     }
   }
-  .hover\:opacity-80 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 80%;
-      }
-    }
-  }
   .hover\:opacity-90 {
     &:hover {
       @media (hover: hover) {
         opacity: 90%;
-      }
-    }
-  }
-  .hover\:opacity-100 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 100%;
       }
     }
   }
