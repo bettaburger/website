@@ -1,216 +1,374 @@
 <!DOCTYPE html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body class="bg-zinc-200 min-h-screen flex flex-col">
-  <div class="min-h-screen flex flex-row justify-center">
-  <div class="flex flex-col justify-center gap-2">
-    <!--social links-->
-  <div id="section-top" class="underline text-sm sm:text-lg md:text-xl flex flex-row justify-center sm:justify-end md:justify-end gap-4 px-7">
-    <a href="https://github.com/bettaburger" target="_blank" class=" text-blue-400">
-      <button class="border-2 border-dotted border-blue-400 hover:border-blue-400 opacity-50 hover:opacity-90 duration-200 ease-in-200 rounded-full px-3">GitHub</button>
-    </a>
-    <a href="https://www.linkedin.com/in/stephanie-ha-88127b233/" target="blank" class="text-blue-400">
-      <button class="border-2 border-dotted border-blue-400 hover:border-blue-400 opacity-50 hover:opacity-90 duration-200 ease-in-200 rounded-full px-3">Linkedin</button>
-    </a>
-    <a href="https://www.last.fm/user/bettaburger" target="_blank" class="text-blue-400">
-      <button class="border-2 border-dotted border-blue-400 hover:border-blue-400 opacity-50 hover:opacity-90 duration-200 ease-in-200 rounded-full px-3">Last.fm</button>
-    </a>
-    <a href="https://www.instagram.com/catgoesmoooew/" target="_blank" class="text-blue-400">
-      <button class="border-2 border-dotted border-blue-400 hover:border-blue-400 opacity-50 hover:opacity-90 duration-200 ease-in-200 rounded-full px-3">Instagram</button>
-    </a>
-  </div>
-  <!--Header-->
-  <div class="flex flex-row justify-center">
-  <div class="flex flex-col justify-center gap-2">
-    <pre class="text-blue-400 text-[7px] sm:text-[8px] md:text-xs overflow-x-auto text-shadow-lg">⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+<body class="space-mono-regular bg-zinc-200 min-h-screen flex flex-col">
+  <!--front section-->
+  <div class="sticky top-0 min-h-screen flex flex-row justify-center">
+    <div class="flex flex-col justify-center gap-2">
+      <!--social links-->
+      <div id="section-top"
+        class="underline text-sm sm:text-lg md:text-xl flex flex-row justify-center sm:justify-end md:justify-end gap-4 px-7">
+        <a href="https://github.com/bettaburger" target="_blank" class=" text-blue-400">
+          <button
+            class="border-2 border-dotted border-blue-400 hover:border-blue-400 opacity-50 hover:opacity-90 duration-200 ease-in-200 rounded-full px-3">GitHub</button>
+        </a>
+        <a href="https://www.linkedin.com/in/stephanie-ha-88127b233/" target="_blank" class="text-blue-400">
+          <button
+            class="border-2 border-dotted border-blue-400 hover:border-blue-400 opacity-50 hover:opacity-90 duration-200 ease-in-200 rounded-full px-3">Linkedin</button>
+        </a>
+        <a href="https://www.last.fm/user/bettaburger" target="_blank" class="text-blue-400">
+          <button
+            class="border-2 border-dotted border-blue-400 hover:border-blue-400 opacity-50 hover:opacity-90 duration-200 ease-in-200 rounded-full px-3">Last.fm</button>
+        </a>
+        <a href="https://www.instagram.com/catgoesmoooew/" target="_blank" class="text-blue-400">
+          <button
+            class="border-2 border-dotted border-blue-400 hover:border-blue-400 opacity-50 hover:opacity-90 duration-200 ease-in-200 rounded-full px-3">Instagram</button>
+        </a>
+      </div>
+      <!--Header-->
+      <div class="gap-2 mx-4">
+        <pre class="text-blue-400 text-[7px] sm:text-[8px] md:text-xs overflow-x-auto text-shadow-lg">⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠀⠀⠀⠀⠀⠹⡿⣿⣦⡀⠀⠀⠀⠀⠀𓂃 𓈒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡞⠁⠀⢀⣠⣤⣿⣿⢿⣢⣄⠀⠀⠈⠙⢳⣽⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀𓆝⠀𓆝 𓆟⠀⠀⠀⠀⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⣠⣤⠀
 ⠀⠀⠀⠀⠀⠀⠀𓂃 𓈒𓏸⠀⠀⠀⢛⣇⣰⣿⣿⣻⣿⣿⣿⣯⣿⣷⣄⠀⠀⠰⣿⣿⣿⣿⣷⣦⣄⠀⠀⠀⠀⠀⠀𓆝 𓆟 𓆞 𓆝⠀⠀⠀⠀⠀⠀⡛⣻⣿⣿⣷⡦⣄⠀⣷⣦⣄⠀                
 ⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⣸⣿⢿⣿⣿⣿⣿⣿⡿⣻⢿⣿⣿⣿⣷⣦⣤⣽⣿⡿⠛⡛⣻⣿⣿⣷⡦⣄⠀        𓆞 𓆝⠀⠀⠀𓆝 𓆟⠀⠀⠀⠀ ⣷⡦⣄⠀𓂃 𓈒⠀⠙⠶⣶⣤⣄⡀
 ⠀⠀⠀⠀⠀⠈⠉⠓⠒⠋⠉⣚⢸⢸⣯⣯⠏⢻⢁⣯⠀⠀⣬⣿⣿⣿⣯⣿⣿⣿⣶⣺⣿⣿⣿⣿⣟⣿⠆⠀⠀⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀          ⠉⠙⠶⣶⣤⣄⠉⠙⠶⣶⣤⣄.
     </pre>
-    <div class="fadeInUp-animation w-max">
-      <h1 id="typewriter" class=" md:pl-10 sm:pl-6 pl-3 text-sm sm:text-lg md:text-xl text-blue-400 typing-animation"></h1>
-    </div>
-      <h1 class="fadeInUp-animation md:pl-10 sm:pl-6 pl-3 text-4xl sm:text-6xl md:text-8xl font-medium text-blue-400">Stephanie Ha</h1>  
-    <pre class="text-center text-blue-400 text-[7px] sm:text-[8px] md:text-xs overflow-x-auto text-shadow-lg">⠀
+        <div class="fadeInUp-animation w-max mb-3">
+          <h1 id="typewriter" class="pl-3 text-sm sm:text-lg md:text-xl text-blue-400 typing-animation"></h1>
+        </div>
+        <h1 class="fadeInUp-animation text-center text-5xl sm:text-7xl md:text-7xl font-medium text-blue-400">Stephanie Ha</h1>
+        <pre class="text-center text-blue-400 text-[7px] sm:text-[8px] md:text-xs overflow-x-auto text-shadow-lg">⠀
     ⠉⠙⠶⣶⣤⣄⡀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠀⠀⠀⠹⡿⣿⣦⡀⠀⠀⠀𓂃 𓈒⠀⠀⠀𓆝⠀𓆝 𓆟⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠹⡿⣿⣦⡀ ⠀⠀𓂃 𓈒
-    </pre>
+        </pre>
+        <div class="absolute bottom-15 left-1/2 -translate-x-1/2 animate-bounce">
+          <a class="text-blue-400 text-center text-4xl">⬇︎</a>
+        </div>
+      </div>
     </div>
   </div>
+  <!--waves-->
+  <div class="wave-wrapper">
+    <svg class="wave wave-back" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path class="fill-blue-400"
+        d="M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,218.7C672,213,768,171,864,165.3C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L0,320Z">
+      </path>
+    </svg>
+    <svg class="wave wave-front" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path class="fill-blue-400" d="M0,180 C180,80 360,280 540,180 S900,80 1080,180 S1260,280 1440,180 V320 H0 Z">
+      </path>
+    </svg>
   </div>
-  </div>
-  <pre class="text-blue-400 text-[7px] sm:text-[8px] md:text-xs overflow-x-auto text-shadow-lg">⠀
-    ⠉⠙⠶⣶⣤⣄⡀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠀⠀⠀⠹⡿⣿⣦⡀⠀⠀⠀𓂃 𓈒⠀⠀⠀𓆝⠀𓆝 𓆟⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠹⡿⣿⣦⡀ ⠀⠀𓂃 𓈒
-  </pre>
   <!--about and timeline section row-->
-  <div id="section-aboutTimeline" class="min-h-screen flex flex-row gap-5">
-  <!--about section-->
-  <div class="fadeLeft-animation flex flex-col justify-start md:pl-14 sm:pl-6 pl-3 my-6">
-    <!--about me-->
-    <h2 class="fadeLeft-animation text-2xl sm:text-5xl md:text-6xl font-semibold text-blue-500 mb-4">>_About me</h2>
-    <div class="md:p-6 sm:p-4 p-2 my-3 text-xs sm:text-1xl md:text-2xl text-blue-400 mb-7 rounded-lg border-2 border-dotted shadow-md">
-      𑣲⋆࿔*:･<br>
-      <br>
-      I'm a student studying Computer Science at University of<br>
-      Massachusetts Boston with abooout <span class="px-1 text-2xl sm:text-3xl md:text-4xl">three</span> semesters left to complete!<br>
-      <br>
-      I like reading and learning about Linux operating system and networks. I hope to work in that kind of field in the future<br>
-      <br>
-      Outside of coding, I loooove listening to music, eating, reading books and doom-scrolling Tiktok.<br>
-      I occasionally go on hikes and runs when time permits 三三ᕕ( ᐛ )ᕗ 
-    </div>
-    <!--hiking pics-->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <img src="img/IMG_0338.jpg" class="w-full h-60 object-cover rounded-lg">
-      <img src="img/IMG_3716.jpg" class="w-full h-60 object-cover rounded-lg">
-      <img src="img/IMG_7421.jpg" class="w-full h-60 object-cover rounded-lg">
-    </div>
-  </div>
-  <!--timeline-->
-  <div class="fadeRight-animation flex flex-col justify-start md:px-10 sm:px-6 px-3 my-6">
-    <h2 class="text-2xl sm:text-5xl md:text-7xl font-semibold text-blue-500 mb-4">Timeline</h2>
-    <ul>
-      <li class="relative flex items-baseline gap-6 pb-7">
-        <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400" viewBox="0 0 16 16">
-            <circle cx="8" cy="8" r="8" />
-          </svg>
-        </div>
-        <div>
-          <p class="text-1xl sm:text-1xl md:text-2xl text-green-600">June 2026</p>
-          <p class="mt-2 text-green-600 text-xs sm:text-[8px] md:text-[18px]">Joined UMB Develops</p>
-        </div>
-      </li>
-      <li class="relative flex items-baseline gap-6 pb-7">
-        <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400" viewBox="0 0 16 16">
-            <circle cx="8" cy="8" r="8" />
-          </svg>
-        </div>
-        <div>
-          <p class="text-1xl sm:text-1xl md:text-2xl text-blue-400">March 2026</p>
-          <p class="mt-2 text-blue-400 text-xs sm:text-[8px] md:text-[18px]">Started working part-time at Target as a Starbucks barista ‧𓍢ִ໋𖠚 ׂ 𓈒 ⋆ ۪ </p>
-        </div>
-      </li>
-      <li class="relative flex items-baseline gap-6 pb-7">
-        <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400" viewBox="0 0 16 16">
-            <circle cx="8" cy="8" r="8" />
-          </svg>
-        </div>
-        <div>
-          <p class="text-1xl sm:text-1xl md:text-2xl text-blue-400">July 2025</p>
-          <p class="mt-2 text-blue-400 text-xs sm:text-[8px] md:text-[18px]">Worked at Dunkin' as a Sales Associate ‧𓍢ִ໋𖠚 ׂ 𓈒 ⋆ ۪ </p>
-        </div>
-      </li>
-      <li class="relative flex items-baseline gap-6 pb-7">
-        <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400" viewBox="0 0 16 16">
-            <circle cx="8" cy="8" r="8" />
-          </svg>
-        </div>
-        <div>
-          <p class="text-1xl sm:text-1xl md:text-2xl text-blue-400">June 2023</p>
-          <p class="mt-2 text-blue-400 text-xs sm:text-[8px] md:text-[18px]">Began Technology Apprenticeship at Digital Ready</p>
-        </div>
-      </li>
-      <li class="relative flex items-baseline gap-6 pb-7">
-        <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400" viewBox="0 0 16 16">
-            <circle cx="8" cy="8" r="8" />
-          </svg>
-        </div>
-        <div>
-          <p class="text-1xl sm:text-1xl md:text-2xl text-blue-400">May 2023</p>
-          <p class="mt-2 text-blue-400 text-xs sm:text-[8px] md:text-[18px]">Graduated Boston Latin Academy</p>
-        </div>
-      </li>
-      <li class="relative flex items-baseline gap-6 pb-7">
-        <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400" viewBox="0 0 16 16">
-            <circle cx="8" cy="8" r="8" />
-          </svg>
-        </div>
-        <div>
-          <p class="text-1xl sm:text-1xl md:text-2xl text-blue-400">June 2022</p>
-          <p class="mt-2 text-blue-400 text-xs sm:text-[8px] md:text-[18px]">Worked at Greater Horizon Healthcare as an assistant</p>
-        </div>
-      </li>
-    </ul>
-  </div> <!-- end of timeline -->
-  </div>
-  <pre class="text-blue-400 text-[7px] sm:text-[8px] md:text-xs overflow-x-auto text-shadow-lg">⠀
-    ⠉⠙⠶⣶⣤⣄⡀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠀⠀⠀⠹⡿⣿⣦⡀⠀⠀⠀𓂃 𓈒⠀⠀⠀𓆝⠀𓆝 𓆟⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠹⡿⣿⣦⡀ ⠀⠀𓂃 𓈒
-  </pre> 
-  <!-- Projects and navigation -->
-   <div class="flex flex-row gap-5">
-    <!--projects-->
-   <div id="section-projects" class="flex flex-col justify-start md:pl-14 sm:pl-6 pl-3 my-6">
-    <h2 class="text-2xl sm:text-5xl md:text-6xl font-semibold text-blue-500 mb-4">
-      <a href="#section-projects">>_Projects</a></h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 mr-3">
-      <div class="flex flex-col p-2 text-1xl sm:text-2xl md:text-3xl rounded-lg border-blue-400 border-2 border-dotted shadow-md">
-        <a class="underline text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="https://github.com/bettaburger/pobby" target="blank">Pobby</a>
-        <h2 class=" text-blue-400 text-xs sm:text-1xl md:text-2xl">A CLI tool that monitors processes, inspired by HTOP</h2>
-        <img src="img/projects/pobby.png" class="pt-5 w-full h-60 object-cover rounded-lg">
-      </div>
-      <div class="flex flex-col">
-      <div class="border-blue-400 p-2 text-1xl sm:text-2xl md:text-3xl rounded-lg border-2 border-dotted shadow-md">
-        <a class="underline text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="https://github.com/B6ChiP/chimera-dashboard" target="blank">Chimera Dashboard</a>
-        <h2 class="text-blue-400 text-xs sm:text-1xl md:text-2xl">Dashboard for UMASS Boston's Chimera cluster</h2>
-      </div>
-      <div class="border-blue-400 p-2 text-1xl sm:text-2xl md:text-3xl rounded-lg border-2 border-dotted shadow-md">
-        <a class="underline text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="https://github.com/bettaburger/website" target="blank">Personal Website</a>
-        <h2 class="text-blue-400 text-xs sm:text-1xl md:text-2xl">Created to learn UI/UX</h2>
-      </div>
-      <div class="border-blue-400 p-2 text-1xl sm:text-2xl md:text-3xl rounded-lg border-2 border-dotted shadow-md">
-        <a class="underline text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="https://github.com/bettaburger/kurn" target="blank">Kurn</a>
-        <h2 class="text-blue-400 text-xs sm:text-1xl md:text-2xl">A PCAP Analyzer, inspired by Wireshark</h2>
-      </div>
-      <div class="border-blue-400 p-2 text-1xl sm:text-2xl md:text-3xl rounded-lg border-2 border-dotted shadow-md">
-        <a class="underline text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="https://github.com/bettaburger/grp" target="blank">grp</a>
-        <h2 class="text-blue-400 text-xs sm:text-1xl md:text-2xl">Mini Bash</h2>
-      </div>
-      </div>
-    </div>
-    </div>
-    <!--navigation section-->
-    <div id="section-nav" class="flex flex-col px-3 my-6 justify-start">
-      <h2 class="px-3 text-2xl sm:text-5xl md:text-6xl font-semibold text-blue-500 mb-4">
-        <a href="#section-nav">Navigation</a></h2>
-      <div class="flex flex-col text-right px-3 mb-7 ">
-      <a class="text-2xl sm:text-5xl md:text-5xl text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="#section-top">Top</a>
-      <a class="text-2xl sm:text-5xl md:text-5xl text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="#section-aboutTimeline">About Timeline</a> 
-      <a class="text-2xl sm:text-5xl md:text-5xl text-blue-400 hover:text-green-500 transition-colors duration-200 ease-in-200" href="#section-bottom">Bottom</a>
-      </div>
-    </div>
-    </div> <!--end of proj and nav section-->
-    <!-- bottom section -->
-    <div class="flex flex-col md:pl-14 sm:pl-6">
-      <!-- github stats row -->
-      <div class="flex flex-row align-center flex-wrap gap-5 p-3"> 
-        <div class="rounded-lg shadow-sm p-2">
-          <img class="w-full" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bettaburger&theme=transparent&hide_border=true&layout=compact"/>
-        </div>
-        <div class="rounded-lg shadow-sm p-2">
-          <img class="w-full" src="https://ghchart.rshah.org/bettaburger">
-        </div>
-      </div>
-    </div>
-    <pre class="text-center text-blue-400 text-[7px] sm:text-[8px] md:text-xs overflow-x-auto text-shadow-lg">⠀
-    ⠉⠙⠶⣶⣤⣄⡀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠀⠀⠀⠹⡿⣿⣦⡀⠀⠀⠀𓂃 𓈒⠀⠀⠀𓆝⠀𓆝 𓆟⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠹⡿⣿⣦⡀ ⠀⠀𓂃 𓈒
+  <div id="section-aboutTimeline" class="bg-blue-400 sticky top-0 min-h-screen flex flex-col gap-5">
+    <!--about section-->
+    <div
+      class="fadeLeft-animation flex flex-col sm:flex-col md:flex-row justify-start md:pl-14 sm:pl-6 pl-3 my-6 gap-4">
+      <pre class="text-left text-zinc-200 text-[6px] sm:text-[5px] md:text-xs overflow-hidden text-shadow-lg">
+      °‧｡˚○ ·。
+      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⠄⠀⠀⠀⣠⡶⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⢤⠀⢤⠹⡌⠃⠀⠂⠀⠀𓂃 𓈒⠀⠀⣠⠃⠘⣇⠀⠀⠁⠈⠚⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠳⠼⠃⠢⠦⠙⠙⠀⠀⠀⠀⠀⢀⣤⠖⡧⠐⠚⠙⠳⠤⢀⢀⢀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⣠⣤⠀⠀⠀⠀⠀⠀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀
+⠀⢠⣄⣄⡀⠀⠀⠀⠀⠀⠈⠁⠀⠀⠀⠀⢠⣾⠫⠇⠀⠀⠰⠒⠂⠀⠀⠈⠒⣭⣿⡧⣀⠀⠀⠀𓂃 𓈒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀                     ⣯⣿⣷⣄⠀⠀⠰⣿⣿⣿⣄
+⣼⡅⠐⠐⠻⠶⠶⠖⠋⣉⡿⠃⠀⠀⠀⠀⠹⢿⣇⣆⣀⣠⡀⠔⢾⣿⠋⠈⠙⢝⣾⠿⢹⣟⢶⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⣠⣤⠀⠀𓆝⠀𓆝 𓆟⠀⠀⠀
+⠙⢧⡀⠀⠄⢠⣆⣌⢸⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢆⠀⢱⠀⠀⠀⠀⠈⠀⠀⠉⢺⠿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⢀⣠⣤⣿⣿⢿⣢⣄⠀⠀⠈⠙⢳⣽⣿⣿⣷⡀⠀⠀𓆟 𓆞 𓆝⠀⠀⠀⠀
+⠀⠀⠙⣇⢀⠀⠉⠳⠷⣿⣦⣤⣴⣶⡄⠀⣀⠀⠀⡀⣠⣄⣀⣀⡙⠛⠃⠀⠀⠀｡˚○⠀⠀⠀⠉⠘⠓⣀⠤⣤⡀⠀⠀⢀⠀⣀⠀°‧｡⠀⠀⠀⠀⠀⠀⠀⠀𓂃 𓈒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠀⠀⠀⠀⠤⠳⠀⠀⠀⠀⠀⠀⠀⣯⣿⣷⣄⠀⠀⠰⣿⣿⣿⣿⣷⣦⣄
+⠀⠀⠀⡏⠘⣻⣷⠶⠶⣲⣬⣬⣥⣤⠄⣀⣤⠼⠟⠋⠉⠁⠀⠉⠉⠟⠛⠻⢶⣤⡀⠀⠀⠀⡀⢤⣄⠀⠀⠉⠚⠛⠓⠒⠟⠋⠀                          ⠼⠟⠋⠉⠁⠀⠉⠉⠟⠛⠻⢶
+⠀⠀⠀⣿⣷⠋⠀⠀⠀⠀⠀⠙⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠛⠢⡀⠀⠙⠙⠊⠠⠲⣢⠀⠀⠀⠀°‧｡⠀⠀⠀⠀⠀⣠⡴⠖⢾⣶⣦⣄⡙⠀⠀⠀⠀⠀⠀⠹⡿⣿⣦⡀⠀⠀⠀⠀⠀𓂃 𓈒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠚⠉⠙⠶⣶⣤⣄⡀⠀⠀
+⠀⠀⠀⠀⠀⠀         
+⠀⠀⠀⠈⣁⡀⡀⠀⠀⠀°‧｡⠀⠀⠀⠀⠀⠀⠀⠀𓂃 𓈒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠀⠀⠀⠀⠤⠳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀𓂃 𓈒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠀⠀⠀⠀⠤⠳⠀⠀
+⠀⠀⠀⠀⠑⠛⠀⠀⠀
     </pre>
-    <!-- footer -->
-    <div id="section-bottom" class="text-center opacity-70 md:pl-14 sm:pl-6 px-3 my-6">
-    <h2 class="text-xs sm:text-1xl md:text-2xl text-blue-300 mb-4">want to contact me? send me an email at stephanieha2021@gmail.com</h2>
+      <!--about me-->
+      <div class="flex flex-col m-10">
+        <h2 class="italic font-boldbfadeLeft-animation text-3xl sm:text-4xl md:text-5xl text-zinc-100">Hello,</h2>
+        <div class="font-normal pt-5 text-xs sm:text-xs md:text-lg text-zinc-200">
+          <h3>My name is <span class="text-yellow-200">Stephanie Ha</span>, I am a student studying Computer Science at
+            UMASS Boston with about three semesters left to complete.</h3>
+          <br>
+          <h3>I love working with <span class="text-yellow-200">Linux OS</span> and learning more about how computers
+            communicate with each other. My <span class="text-yellow-200">goal</span> is to work in that kind of field
+            in the future. In the meantime, I enjoy building <span class="text-yellow-200">CLI tools</span> to help
+            automate certain tasks for my projects.</h3>
+          <br>
+          <h3>Outside of coding, I love listening to music and making playlists for my friends.
+            My current favorite song is <a href="https://www.youtube.com/watch?v=8uR5JB3su5A" target="_blank"
+              class="underline italic text-yellow-200">"Perfect" by Dance Gavin Dance</a>. Occasionally I go on hikes
+            and runs when time permits.</h3>
+          <br>
+          三三ᕕ( ᐛ )ᕗ
+        </div>
+        <pre class="text-right text-zinc-200 text-[6px] sm:text-[5px] md:text-xs overflow-hidden text-shadow-lg">⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⡄⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣿⣧⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⣿⣿⣿⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣏⢫⡟⣟⣿⡆⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡤⠊⠁⠄⠠⠉⠁⠒⠠⠄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⡶⠿⣯⠂⠀⠊⠃⣾⣿⡇⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⠀⠀⠀⠀⠀⠀⠀⠀⠠⢄⣤⣈⡁⠒⠠⣤⣄⣀⣀⣀⣀⣀⡠⠤⠔⠒⠉⢋⠉⠃⠀⢡⡄⠀⣶⡄⠀⢻⡇⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠀⠁⣈⠁⠸⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠄⠀⠄⠀⣀⠸⠆⢸⣿⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠇⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠇⣀⡙⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠄⠀⠀⠀⠩⡖⠠⠾⣿⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⠀⢸⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢡⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡄⢠⡰⣿⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠘⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠱⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠄⠈⠀⠈⠃⠀⢰⣿⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣥⠀⠰⠧⢹⣿⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡞⣭⠐⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠴⢼⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠎⠁⠉⡅⠘⣁⢤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠆⠐⢠⣼⡇⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⠔⠁⠀⠀⠀⠀⠀⠉⢠⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⣿⠁⠀
+⠀⠀⠀⠀⠀⢀⡴⠁⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⢠⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠋⠘⢃⡏⠀⠀
+⠀⠀⠀⠀⣠⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠆⠐⣾⠀⠀⠀
+⠀⠀⢀⡼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⢀⣼⠃⠀⠀⠀
+⠀⠀⣼⢳⡦⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢀⣴⠃⠀⠀⠀⠀
+⠀⣼⡇⡀⠀⠂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠏⠀⠀⠀⠀⠀
+⢠⣿⠁⠁⠿⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡽⠃⠀⠀⠀⠀⠀⠀
+⣸⡟⡄⢀⣄⠀⢠⡄⢠⠀⠀⠘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⢠⠐⡀⠀⠀⠀⠀⠀⠋⠤⣀⠀⠀⠀⠀⠀⠀
+⣿⣷⡁⠈⣥⠀⠀⠀⠀⢀⡀⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⠛⠶⣄⡀⠀⠀
+⣿⣿⣗⣴⣦⠀⢾⣇⣀⣈⣡⣄⠀⠶⢀⡄⠘⠂⠈⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡐⠆⠹⣦⠀
+⣿⣿⣿⣿⣿⠿⠿⠿⠿⠟⠻⠿⠿⠿⠶⢷⣶⣤⣨⣁⣄⠉⠀⠰⠄⠀⣀⠀⢀⢀⣀⣀⠤⠔⠚⠁⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄⠐⢨⣿⡇
+⠹⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠙⠋⠉⠉⠉⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠛⠉⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡆⠀⠰⠦⠀⠀⠀⠀⠀⠀⠀⢣⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⣌⠀⠶⢀⣴⠞⠉⠙⢇⠀⠈⢇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⢿⣿⡿⠃⠀⠀⠀⠀⢳⡀⠘⡆⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢣⠀⢸⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡆⠀⡇⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⢱⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠀⢸⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡆⢸⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⢸⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⢸⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⡎⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠌⢠⠁⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠁⡘⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠁⡸⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠂⡼⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠃⠜⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡔⢁⠊⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠊⡔⠁⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡔⢡⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠊⡔⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⢡⠎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⡡⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⡢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    </pre>
+      </div>
     </div>
+  </div>
+  <!--2nd waves-->
+  <div class="wave-wrapper">
+    <svg class="wave wave-back" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path class="fill-blue-500"
+        d="M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,218.7C672,213,768,171,864,165.3C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L0,320Z">
+      </path>
+    </svg>
+    <svg class="wave wave-front" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path class="fill-blue-500" d="M0,180 C180,80 360,280 540,180 S900,80 1080,180 S1260,280 1440,180 V320 H0 Z">
+      </path>
+    </svg>
+  </div>
+  <!--hiking pics-->
+  <div class="flex flex-col sticky top-0 min-h-screen bg-blue-500">
+    <div class="grid md:grid-cols-3 gap-4 my-20 mx-10">
+      <div
+        class="md:row-span-2 space-mono-regular font-normal pt-5 text-xs sm:text-xs p-1 md:text-lg border-b border-solid border-zinc-100 text-zinc-200">
+        <h3><span class="text-4xl text-yellow-200">I</span> have been to a total of <span
+            class="text-yellow-200">six</span> state and national parks and have ran two trails. Most of these pictures
+          were taken in Maine and Massachusetts.</h3>
+        <h3>I started recording my outdoor life <span class="text-yellow-200">three years</span> ago when I wanted to do
+          something outside of the gym and my house.</h3>
+        <br>
+        <h3><span class="text-4xl text-yellow-200">I would love</span> to visit more places in the future and eventually
+          visit every national park in the U.S.
+          Hiking has quickly become one of my favorite ways to disconnect and recharge.</h3>
+        <br>
+        <h3>More pictures can be found on my Instagram.</h3>
+      </div>
+      <img src="img/IMG_0338.jpg" class="md:col-span-2 h-125 w-full border border-zinc-100 object-cover">
+      <img src="img/IMG_3716.jpg" class="h-52 w-full border border-zinc-100 object-cover">
+      <img src="img/IMG_7421.jpg" class="h-52 w-full border border-zinc-100 object-cover">
+    </div>
+  </div>
+  <!--3rd waves-->
+  <div class="wave-wrapper">
+    <svg class="wave wave-back" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path class="fill-blue-600"
+        d="M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,218.7C672,213,768,171,864,165.3C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L0,320Z">
+      </path>
+    </svg>
+    <svg class="wave wave-front" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path class="fill-blue-600" d="M0,180 C180,80 360,280 540,180 S900,80 1080,180 S1260,280 1440,180 V320 H0 Z">
+      </path>
+    </svg>
+  </div>
+  <!-- Projects and navigation -->
+  <div class="sticky top-0 min-h-screen flex flex-row gap-5 bg-blue-600">
+    <!--projects-->
+    <div id="section-projects" class="text-zinc-200 flex flex-col justify-start md:pl-14 sm:pl-6 pl-3 my-20">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl mb-4 text-zinc-100">Projects</h2>
+      <h3><span class="text-2xl text-yellow-200">Most</span> of my projects were created to help speed up tasks in the
+        terminal and were developed using Golang and libraries such as Cobra and Tview.</h3>
+      <br>
+      <h3>The Chimera Dashboard was my first project working with clients. It was also my first experience touching and
+        querying existing data from servers with Prometheus and then visualizing them using Grafana. <span
+          class=" text-yellow-200">$netstat and $telnet</span> was particularily helpful for this project. Searching up
+        processes started to become annoying and so I created Pobby to help me.</h3>
+      <br>
+      <h3>Initially, Pobby was developed using Bubbletea, but I found the ELM architecture complicated to work with as I
+        added more functionality.</h3>
+      <br>
+      <!--projects showcase-->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-zinc-900 border-2 border-blue-400 p-5 transition-all duration-300 hover:-translate-y-2 hover:border-white hover:shadow-xl">
+          <h3 class="text-2xl font-semibold text-blue-300">Pobby</h3>
+          <p class="text-zinc-300 mt-2">Terminal process monitor inspired by htop.</p>
+          <!-- tech Stack -->
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="px-3 py-1 text-xs rounded-full border border-blue-400 text-blue-300">Go</span>
+            <span class="px-3 py-1 text-xs rounded-full border border-blue-400 text-blue-300">tview</span>
+            <span class="px-3 py-1 text-xs rounded-full border border-blue-400 text-blue-300">CLI</span>
+          </div>
+          <a href="https://github.com/bettaburger/pobby" target="_blank"
+            class="inline-block mt-5 px-4 py-2 rounded-lg border border-blue-400 text-blue-300 hover:bg-blue-400 hover:text-zinc-900 transition">
+            View on GitHub →
+          </a>
+        </div>
+        <div class="bg-zinc-900 border-2 border-blue-400 p-5 transition-all duration-300 hover:-translate-y-2 hover:border-white hover:shadow-xl">
+          <h3 class="text-2xl font-semibold text-blue-300">Chimera Dashboard</h3>
+          <p class="text-zinc-300 mt-2">Dashboard built for the UMass Boston Chimera computing cluster.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="px-3 py-1 text-xs rounded-full border border-blue-400 text-blue-300">Prometheus</span>
+            <span class="px-3 py-1 text-xs rounded-full border border-blue-400 text-blue-300">Grafana</span>
+            <span class="px-3 py-1 text-xs rounded-full border border-blue-400 text-blue-300">Data Visualization</span>
+          </div>
+          <a href="https://github.com/B6ChiP/chimera-dashboard" target="_blank"
+            class="inline-block mt-5 px-4 py-2 rounded-lg border border-blue-400 text-blue-300 hover:bg-blue-400 hover:text-zinc-900 transition">
+            View on GitHub →
+          </a>
+        </div>
+        <div class="bg-zinc-900 border-2 border-blue-400 p-5 transition-all duration-300 hover:-translate-y-2 hover:border-white hover:shadow-xl">
+          <h3 class="text-2xl font-semibold text-blue-300">Personal Website</h3>
+          <p class="text-zinc-300 mt-2">Personal website created to explore UI/UX and frontend development.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="px-3 py-1 text-xs rounded-full border border-blue-400 text-blue-300">HTML</span>
+            <span class="px-3 py-1 text-xs rounded-full border border-blue-400 text-blue-300">Tailwind CSS</span>
+          </div>
+          <a href="https://github.com/bettaburger/website" target="_blank"
+            class="inline-block mt-5 px-4 py-2 rounded-lg border border-blue-400 text-blue-300 hover:bg-blue-400 hover:text-zinc-900 transition">
+            View on GitHub →
+          </a>
+        </div>
+        <div class="bg-zinc-900 border-2 border-blue-400 p-5 transition-all duration-300 hover:-translate-y-2 hover:border-white hover:shadow-xl">
+          <h3 class="text-2xl font-semibold text-blue-300">Kurn</h3>
+          <p class="text-zinc-300 mt-2">Packet analyzer for inspecting PCAP files and network traffic in the terminal, inspired by Wireshark.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="px-3 py-1 text-xs rounded-full border border-blue-400 text-blue-300">Golang</span>
+            <span class="px-3 py-1 text-xs rounded-full border border-blue-400 text-blue-300">tview</span>
+            <span class="px-3 py-1 text-xs rounded-full border border-blue-400 text-blue-300">Networking</span>
+          </div>
+          <a href="https://github.com/bettaburger/kurn" target="_blank"
+            class="inline-block mt-5 px-4 py-2 rounded-lg border border-blue-400 text-blue-300 hover:bg-blue-400 hover:text-zinc-900 transition">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--timeline-->
+    <div class="fadeRight-animation flex flex-col text-zinc-200 justify-start md:px-10 sm:px-6 px-3 mb-20">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl mb-4 my-20">Timeline</h2>
+      <ul>
+        <li class="relative flex items-baseline gap-6 pb-7">
+          <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400"
+              viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-1xl sm:text-1xl md:text-2xl text-yellow-300">June 2026</p>
+            <p class="mt-2 text-yellow-200 text-xs sm:text-[8px] md:text-[18px]">Joined UMB Develops</p>
+          </div>
+        </li>
+        <li class="relative flex items-baseline gap-6 pb-7">
+          <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400"
+              viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-1xl sm:text-1xl md:text-2xl">March 2026</p>
+            <p class="mt-2 text-xs sm:text-[8px] md:text-[18px]">Started working at Target as a Starbucks barista
+              ‧𓍢ִ໋𖠚 ׂ </p>
+          </div>
+        </li>
+        <li class="relative flex items-baseline gap-6 pb-7">
+          <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400"
+              viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-1xl sm:text-1xl md:text-2xl">July 2025</p>
+            <p class="mt-2 text-xs sm:text-[8px] md:text-[18px]">Worked at Dunkin' as a Sales Associate ‧𓍢ִ໋𖠚 ׂ </p>
+          </div>
+        </li>
+        <li class="relative flex items-baseline gap-6 pb-7">
+          <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400"
+              viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-1xl sm:text-1xl md:text-2xl">June 2023</p>
+            <p class="mt-2 text-xs sm:text-[8px] md:text-[18px]">Began Technology Apprenticeship at Digital Ready</p>
+          </div>
+        </li>
+        <li class="relative flex items-baseline gap-6 pb-7">
+          <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400"
+              viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-1xl sm:text-1xl md:text-2xl">May 2023</p>
+            <p class="mt-2 text-xs sm:text-[8px] md:text-[18px]">Graduated Boston Latin Academy</p>
+          </div>
+        </li>
+        <li class="relative flex items-baseline gap-6 pb-7">
+          <div class="before:absolute before:left-[5.5px] before:h-full before:w-px before:bg-blue-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-blue-400"
+              viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-1xl sm:text-1xl md:text-2xl">June 2022</p>
+            <p class="mt-2 text-xs sm:text-[8px] md:text-[18px]">Worked at Greater Horizon Healthcare as an assistant
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> <!--end of projects and timeline section -->
+  <!--4th waves-->
+  <!-- bottom section -->
+  <div class="sticky top-0 flex flex-col">
+    <h2 class="text-center text-xs sm:text-xl md:text-lg text-blue-300 mb-4">Want to contact me? Send me an email at <span class="text-yellow-200">stephanieha2021@gmail.com</span></h2>
+  </div>
   <!--typing animation script-->
   <script>
-    const words = ["^. .^₎Ⳋ","Welcome to my website", "Writing code by night", "Serving coffees by day", "Check out my socials"];
+    const words = ["^. .^₎Ⳋ", "Welcome to my website", "Writing code by night", "Serving coffees by day", "Check out my socials"];
     const element = document.getElementById("typewriter");
     let i = 0;
     function nextSentence() {
@@ -226,4 +384,3 @@
   </script>
   <!-- scroll animation -->
 </body>
-  

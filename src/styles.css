@@ -1,11 +1,31 @@
 @import "tailwindcss";
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Days+One&family=Gravitas+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.days-one-regular {
+  font-family: "Days One", sans-serif;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+}
 
 .archivo-black-regular {
   font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+}
+
+.gravitas-one-regular {
+  font-family: "Gravitas One", serif;
+}
+
+.cabin-font {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 /*fade in up animation*/
@@ -79,3 +99,47 @@ html {
   scroll-behavior: smooth;
 }
 
+/*waves animation*/
+.wave-wrapper {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.wave {
+    position: absolute;
+    width: 300%;
+    left: -100%;
+    bottom: 0;
+    height: 180px;
+}
+
+.wave-back {
+    opacity: .55;
+    animation: waveBack 4s ease-in-out infinite alternate;
+}
+
+.wave-front {
+    animation: waveFront 3s ease-in-out infinite alternate;
+}
+
+@keyframes waveFront {
+    from {
+        transform: translateX(-10);
+    }
+
+    to {
+        transform: translateX(-30%);
+    }
+}
+
+@keyframes waveBack {
+    from {
+        transform: translateX(-30%);
+    }
+
+    to {
+        transform: translateX(30%);
+    }
+}
