@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Gravitas+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Days+One&family=Gravitas+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Gravitas+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Days+One&family=Gravitas+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 .days-one-regular {
   font-family: "Days One", sans-serif;
@@ -24,8 +24,7 @@
 .cabin-font {
   font-family: "Cabin", sans-serif;
   font-optical-sizing: auto;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
 /*fade in up animation*/
@@ -75,16 +74,17 @@
 
 /*typing text effect animation*/
 @keyframes typing {
-  from { 
-    width: 0; 
+  from {
+    width: 0;
   }
-  to { 
-    width: 100%; 
+  to {
+    width: 100%;
   }
 }
 @keyframes blink {
-  50% { 
-    border-color: transparent; }
+  50% {
+    border-color: transparent;
+  }
 }
 .typing-animation {
   overflow: hidden;
@@ -92,54 +92,58 @@
   border-right: 3px solid currentColor;
   width: 0;
   line-height: 1.2;
-  animation: 1s typing steps(20) forwards, blink 0.7s infinite; 
+  animation:
+    1s typing steps(20) forwards,
+    blink 0.7s infinite;
 }
 
+body,
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 /*waves animation*/
 .wave-wrapper {
-    position: relative;
-    height: 180px;
-    overflow: hidden;
-    background: transparent;
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  background: transparent;
 }
 
 .wave {
-    position: absolute;
-    width: 300%;
-    left: -100%;
-    bottom: 0;
-    height: 180px;
+  position: absolute;
+  width: 300%;
+  left: -100%;
+  bottom: 0;
+  height: 180px;
 }
 
 .wave-back {
-    opacity: .55;
-    animation: waveBack 4s ease-in-out infinite alternate;
+  opacity: 0.55;
+  animation: waveBack 4s ease-in-out infinite alternate;
 }
 
 .wave-front {
-    animation: waveFront 3s ease-in-out infinite alternate;
+  animation: waveFront 3s ease-in-out infinite alternate;
 }
 
 @keyframes waveFront {
-    from {
-        transform: translateX(-10);
-    }
+  from {
+    transform: translateX(-10);
+  }
 
-    to {
-        transform: translateX(-30%);
-    }
+  to {
+    transform: translateX(-30%);
+  }
 }
 
 @keyframes waveBack {
-    from {
-        transform: translateX(-30%);
-    }
+  from {
+    transform: translateX(-30%);
+  }
 
-    to {
-        transform: translateX(30%);
-    }
+  to {
+    transform: translateX(30%);
+  }
 }
